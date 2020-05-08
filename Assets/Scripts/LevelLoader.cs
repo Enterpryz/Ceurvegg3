@@ -37,7 +37,14 @@ public class LevelLoader : MonoBehaviour
         Time.timeScale = 1;
         SceneManager.LoadScene("StartScreen");
 
-    } 
+    }
+
+    public void LoadOptionsScreen()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene("Options Screen");
+
+    }
 
     public void LoadNextScene()
     {

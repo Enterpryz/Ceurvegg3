@@ -47,6 +47,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fltWaitToLoad: 4
   GOwinLabel: {fileID: 0}
+  GOLoseLabel: {fileID: 0}
 --- !u!114 &4740084185673753872
 MonoBehaviour:
   m_ObjectHideFlags: 0

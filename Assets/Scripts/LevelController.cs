@@ -1,11 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Security.Permissions;
+using System.Threading;
 using UnityEngine;
 
 public class LevelController : MonoBehaviour
 {
     [SerializeField] float fltWaitToLoad = 4f;
     [SerializeField] GameObject GOwinLabel;
+    [SerializeField] GameObject GOLoseLabel;
     int intNumberOfAttackers = 0;
     bool boolLevelTimerFinished = false;
 
@@ -13,6 +16,7 @@ public class LevelController : MonoBehaviour
     {
         // don't display Win Level text
         GOwinLabel.SetActive(false);
+        GOLoseLabel.SetActive(false);
     }
 
     public void AttackerSpawned()
@@ -37,6 +41,13 @@ public class LevelController : MonoBehaviour
         yield return new WaitForSeconds(fltWaitToLoad);
         FindObjectOfType<LevelLoader>().LoadNextScene();
     }
+
+    public void HandleLoseCondition()
+    {
+        GOLoseLabel.SetActive(true);
+        Time.timeScale = 0;
+    }
+
 
     public void LevelTimerFinished()
     {

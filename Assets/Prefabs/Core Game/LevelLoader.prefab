@@ -40,7 +40,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5308687310785916699}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 808c33f0da060df438cf2290cbf19c08, type: 3}
+  m_Script: {fileID: 11500000, guid: 527f4cd21fc2b194ab08ef1e058fc956, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   intTimeToWait: 4

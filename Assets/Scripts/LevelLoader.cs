@@ -3,7 +3,8 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LevelLoader : MonoBehaviour {
+public class LevelLoader : MonoBehaviour
+{
     [SerializeField] int intTimeToWait = 4; // time to wait before starting scene
     int intCurrentSceneIndex;
 
@@ -29,14 +30,14 @@ public class LevelLoader : MonoBehaviour {
     {
         Time.timeScale = 1;
         SceneManager.LoadScene(intCurrentSceneIndex);
-    }
+    } 
 
     public void LoadMainMenu()
     {
         Time.timeScale = 1;
         SceneManager.LoadScene("StartScreen");
-    } 
 
+    } 
 
     public void LoadNextScene()
     {
@@ -46,11 +47,10 @@ public class LevelLoader : MonoBehaviour {
     public void LoadYouLose()
     {
         SceneManager.LoadScene("LoseScreen");
-    }
+    } 
 
     public void QuitGame()
     {
         Application.Quit();
-    }
-
+    } 
 } // class LevelLoader

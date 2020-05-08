@@ -1642,6 +1642,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 8666874870609263789}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &8666874870609263791 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4340673485533716968, guid: 153bf62fc984bcf45a5ee559af18ef1b,
+    type: 3}
+  m_PrefabInstance: {fileID: 8666874870609263789}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8797382998261869215
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1723,6 +1729,11 @@ PrefabInstance:
       propertyPath: GOwinLabel
       value: 
       objectReference: {fileID: 8666874870609263790}
+    - target: {fileID: 4459041356694333255, guid: 10d3de16b72a2c24b8931a8559108a45,
+        type: 3}
+      propertyPath: GOLoseLabel
+      value: 
+      objectReference: {fileID: 8666874870609263791}
     - target: {fileID: 9000825255528539588, guid: 10d3de16b72a2c24b8931a8559108a45,
         type: 3}
       propertyPath: m_LocalPosition.x

@@ -5,31 +5,32 @@ using UnityEngine.UI;
 
 public class LivesDisplay : MonoBehaviour
 {
-    [SerializeField] int intLives = 5;
-    Text txtLives;
+    [SerializeField] float fltbaselives = 3;
     [SerializeField] int intDamage = 1;
+    float fltlives;
+    Text txtLives;
 
     void Start()
     {
-        // to access the text component within the text field
+        fltlives = fltbaselives - PlayerPrefsController.GetDifficulty();
         txtLives = GetComponent<Text>();
         UpdateDisplay();
-
+        UnityEngine.Debug.Log("Difficulty Setting Is Presently " + PlayerPrefsController.GetDifficulty());
     } // Start()
 
     private void UpdateDisplay()
     {
         // convert the integer star field to a string
-        txtLives.text = intLives.ToString();
+        txtLives.text = fltlives.ToString();
 
     } // UpdateDisplay()
 
     public void TakeLife()
     {
         // decrease our lives by one
-        intLives -= intDamage;
+        fltlives -= intDamage;
         UpdateDisplay();
-        if (intLives <= 0)
+        if (fltlives <= 0)
         {
             FindObjectOfType<LevelController>().HandleLoseCondition();
         }

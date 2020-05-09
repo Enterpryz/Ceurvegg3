@@ -92,7 +92,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fltSpeed: 2
-  fltDamage: 50
+  fltDamage: 200
 --- !u!1 &6923820793044657284
 GameObject:
   m_ObjectHideFlags: 0

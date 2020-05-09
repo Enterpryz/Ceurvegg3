@@ -5,6 +5,23 @@ using UnityEngine;
 public class DefenderSpawner : MonoBehaviour
 {
     Defender defender;
+    GameObject defenderParent;
+    const string DEFENDER_PARENT_NAME = "Defenders";
+
+    private void Start()
+    {
+        CreateDefenderParent();
+    }
+
+    private void CreateDefenderParent()
+    {
+        defenderParent = GameObject.Find(DEFENDER_PARENT_NAME);
+        if (!defenderParent)
+        {
+            defenderParent = new GameObject(DEFENDER_PARENT_NAME);
+        }
+    }
+
     private void OnMouseDown()
     {
         // spawn the defender
@@ -52,12 +69,10 @@ public class DefenderSpawner : MonoBehaviour
         return new Vector2(fltNewX, fltNewY);
 
     } // SnapToGrid()
-    private void SpawnDefender(Vector2 V2roundedPos)
+    private void SpawnDefender(Vector2 roundedPos)
     {
-        // instantiate a defender with NO rotation 
-        Defender newDefender =
-            Instantiate(defender, V2roundedPos, 
-            Quaternion.identity) as Defender;
-    } // SpawnDefender()
+        Defender newDefender = Instantiate(defender, roundedPos, Quaternion.identity) as Defender;
+        newDefender.transform.parent = defenderParent.transform;
+    }
 
-} // class DefenderSapwner
+}

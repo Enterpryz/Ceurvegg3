@@ -300,7 +300,7 @@ GameObject:
   - component: {fileID: 278682316}
   - component: {fileID: 278682315}
   m_Layer: 5
-  m_Name: GardenText
+  m_Name: Helpme
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -322,8 +322,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 25, y: -2}
-  m_SizeDelta: {x: 564.3, y: 172.1}
+  m_AnchoredPosition: {x: 595.2, y: -0.0031586}
+  m_SizeDelta: {x: 729.5, y: 748.29}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &278682315
 MonoBehaviour:
@@ -338,15 +338,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.03893734, g: 0.3301887, b: 0.043858882, a: 1}
+  m_Color: {r: 0, g: 1, b: 0.8431504, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 02c07e1753e66aa4bbc4fd057cfacd0e, type: 3}
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 150
-    m_FontStyle: 0
+    m_FontStyle: 3
     m_BestFit: 0
     m_MinSize: 1
     m_MaxSize: 150
@@ -356,7 +356,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Garbage
+  m_Text: Please send professional help
 --- !u!222 &278682316
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -482,8 +482,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 119, y: -453.1}
-  m_SizeDelta: {x: 485.9, y: 124.4}
+  m_AnchoredPosition: {x: -558.4, y: -227.9}
+  m_SizeDelta: {x: 393.5, y: 118.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &980428154
 MonoBehaviour:
@@ -559,8 +559,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1920, y: 1080}
+  m_AnchoredPosition: {x: 0, y: -0.0012665}
+  m_SizeDelta: {x: 1920, y: 748.29}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1513738192
 MonoBehaviour:
@@ -580,7 +580,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: af6d90221757bcc4d863730bcaab7924, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 04477ad4ba205d64f82ab277766eb75d, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -605,6 +605,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4293516602032070676, guid: dc0f44b0207638e458c9a1fe74037c4c,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3e2aad5b6777c9a4d9ebd94ac33fa650, type: 3}
     - target: {fileID: 4293516602032070677, guid: dc0f44b0207638e458c9a1fe74037c4c,
         type: 3}
       propertyPath: m_Name

@@ -46,6 +46,20 @@ public class LevelLoader : MonoBehaviour
 
     }
 
+    public void LoadSecretArea1()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene("secretroom1");
+
+    }
+
+    public void LoadSActualLevel1()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene("Level1");
+
+    }
+
     public void LoadNextScene()
     {
         SceneManager.LoadScene(intCurrentSceneIndex + 1);
